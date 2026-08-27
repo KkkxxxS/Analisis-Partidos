@@ -305,7 +305,7 @@ async function cargarPartidos() {
         const fecha = new Date().toISOString().split('T')[0];
         
         const respuesta = await fetch(
-            `https://free-api-live-football-data.p.rapidapi.com/?action=get-livescore`,
+            `"https://free-api-live-football-data.p.rapidapi.com/football-current-live",
             {
                 headers: {
                     "X-RapidAPI-Key": claveAPI,
